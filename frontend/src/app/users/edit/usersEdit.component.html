@@ -1,0 +1,16 @@
+<h1>User edit</h1>
+<label>Name</label>
+<input type="text" name="name" id="name" value="" [(ngModel)]="user.name"/><br>
+<label>Last name</label>
+<input type="text" name="lastName" id="lastName" value="" [(ngModel)]="user.lastName"/><br>
+<label>Enabled</label>
+<input type="checkbox" [(ngModel)]="user.enabled"/><br>
+<label>Email</label>
+<input type="text" name="email" id="email" value="" [(ngModel)]="user.email"/><br>
+<button name="save" (click)="save()">Save</button>
+
+<ul *ngIf="showErrors">
+    <li *ngFor="let error of errors">
+        {{error}}
+    </li>
+</ul>

@@ -1,0 +1,19 @@
+<div >
+    <h1>User Module</h1>
+    <ul>
+        <li>
+            <a (click)='showSection("userList")' >List</a>
+            
+        </li>
+        <li>
+            <a (click)='showSection("userAdd")' >Add</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+<users-list-component *ngIf="sections['userList']"></users-list-component>
+<users-add-component *ngIf="sections['userAdd']"></users-add-component>
+<users-edit-component *ngIf="sections['userEdit']" [id]="userId"></users-edit-component>

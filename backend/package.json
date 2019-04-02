@@ -1,0 +1,14 @@
+{
+  "name": "ateknea",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "",
+    "build": ""
+  },
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.4",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,12 @@
+<h1>User List</h1>
+
+<table>
+    <tr *ngFor="let user of users">
+        <td>{{user.name}}</td>
+        <td>{{user.lastName}}</td>
+        <td>{{user.enabled}}</td>
+        <td>{{user.email}}</td>
+        <td><a (click)='deleteUser(user.id);'>Delete</a></td>
+        <td><a (click)='editUser(user.id);'>Edit</a></td>
+    </tr>
+</table>
