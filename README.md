@@ -9,3 +9,5 @@ Go to the frontend directory and from power shell execute ng serve
 Open browser with localhost:4200   
   
 Frontend services runs on port 4200 and backend ports run in 8080  
+
+No unit test present.
